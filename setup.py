@@ -7,7 +7,7 @@ setup(
     author_email='',
     packages=['vote'],
     scripts=['vote/vote.py',],
-    url='https://github.com/nws-cip/probe/tree/master/cip_client/',
+    url='https://github.com/andrew-szymanski/json_client',
     license='LICENSE.txt',
     description='Vote client libraries',
     long_description=open('README.txt').read(),
