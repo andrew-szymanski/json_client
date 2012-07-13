@@ -12,6 +12,6 @@ setup(
     description='Vote client libraries',
     long_description=open('README.txt').read(),
     install_requires=[
-        "simplejson==2.5.2",
+        "simplejson>=2.5.2",
     ],
 )
