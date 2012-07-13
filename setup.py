@@ -6,7 +6,7 @@ setup(
     author='Andrew Szymanski',
     author_email='',
     packages=['vote'],
-    scripts=['bin/vote.py',],
+    scripts=['vote/vote.py',],
     url='https://github.com/nws-cip/probe/tree/master/cip_client/',
     license='LICENSE.txt',
     description='Vote client libraries',
