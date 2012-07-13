@@ -93,10 +93,10 @@ class Publisher(object):
             return_message = "%s (%s)" % (e.read(), e)
             raise Exception(return_message)
         except urllib2.URLError, e:
-            return_message = "%s %s" % (return_message, e)
+            return_message = "%s" % (e)
             raise Exception(return_message)
         except Exception, e:
-            return_message = "%s %s" % (return_message, e)
+            return_message = "%s %s" % (e)
             raise Exception(return_message)
         logger.info("posting json data to server OK")
             
