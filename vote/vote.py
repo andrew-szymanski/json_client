@@ -119,7 +119,7 @@ def send_json(*args, **kwargs):
         with open(json_file) as f: 
             json_str = f.read()
     except IOError as e:
-        self.logger.error("json_file could not be read: [%s], exception: [%s]" % (json_file, e) )
+        logger.error("json_file could not be read: [%s], exception: [%s]" % (json_file, e) )
         return False
     logger.debug("json_str=[%s]" % json_str) 
     
