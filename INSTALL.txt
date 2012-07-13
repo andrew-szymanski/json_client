@@ -1,0 +1,10 @@
+===========
+Client installation 
+===========
+
+
+Prerequisites
+=========
+http://www.pip-installer.org/en/latest/installing.html
+
+
