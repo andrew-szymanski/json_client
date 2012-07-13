@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='vote_client',
-    version='0.1.0',
+    version='1.0',
     author='Andrew Szymanski',
     author_email='',
     packages=['vote'],
