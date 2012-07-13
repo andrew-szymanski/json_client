@@ -81,7 +81,7 @@ class Publisher(object):
         req = urllib2.Request(url, data, {'Content-Type': 'application/json'})
         
         # post json data
-        logger.info("posting json data [%s] to [%s]" % (data, url) )
+        logger.info("posting json data:\n%s\n to [%s]" % (data, url) )
         try:
             self.logger.debug("sending request...")
             f = urllib2.urlopen(req)
