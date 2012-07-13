@@ -102,7 +102,6 @@ class Publisher(object):
             
         # and return
         self.logger.debug("%s::%s DONE" %  (self.__class__.__name__ , inspect.stack()[0][3])) 
-        return (return_status, return_message)
 
     
 def send_json(*args, **kwargs):
