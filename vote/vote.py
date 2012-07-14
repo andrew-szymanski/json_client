@@ -121,12 +121,6 @@ class Publisher(object):
         self.logger.debug("%s %s::%s DONE" %  (LOG_INDENT, self.__class__.__name__ , inspect.stack()[0][3])) 
 
     
-def send_json(*args, **kwargs):
-    """ Send json to server
-    """
-    
-    
-
 
 #                      **********************************************************
 #                      **** mainRun - parse args and decide what to do
