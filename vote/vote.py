@@ -10,8 +10,6 @@ import logging
 import simplejson as json
 import urllib    
 import urllib2
-import socket
-import time
 import os
 import inspect
 
@@ -63,13 +61,13 @@ class Publisher(object):
         self.json_file = kwargs.get('json_file',None)     
         if self.json_file:
             # validate
-            self.logger.debug("%s checking json_file [%s] accessible..." % (2*LOG_INDENT, self.json_file))
+            self.logger.debug("%s retrieving JSON from file: [%s]" % (2*LOG_INDENT, self.json_file))
             try:
                 with open(self.json_file) as f: 
-                    self.json_str = f.read()
+                    self.json_string = f.read()
             except IOError as e:
                 raise Exception("json_file could not be read: [%s], exception: [%s]" % (self.json_file, e) )
-            self.logger.debug("%s checking json_file [%s] accessible PASS" % (2*LOG_INDENT, self.json_file))
+            self.logger.debug("%s retrieved JSON: [%s]" % (2*LOG_INDENT, self.json_string))
             return
         # json_string - we will only get here if json_file not specified
         self.logger.debug("%s json_file not specified, trying json_string..." % (LOG_INDENT))
