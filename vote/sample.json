@@ -1,6 +1,6 @@
 {
-	"user_id": "sample@sample.com",
-	"subject": "culica",
+	"user_id": "ssl_test@sample.com",
+	"subject": "https",
 	"vote": 59,
-	"categories": ["android", "apps", "games", "puzzles"]
+	"categories": ["delete", "'test"]
 }
