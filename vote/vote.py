@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 __author__ = "Andrew Szymanski ()"
-__version__ = "1.0"
+__version__ = "1.1"
 
 """Post vote test harness
 """
