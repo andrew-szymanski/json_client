@@ -104,6 +104,7 @@ class Publisher(object):
             f = urllib2.urlopen(req)
             self.logger.debug("%s reading response..." % (2*LOG_INDENT))
             response = f.read()
+            self.logger.debug("%s response: [%s]" % (2*LOG_INDENT, response))
             self.logger.debug("%s closing connection..." % (2*LOG_INDENT))
             f.close()   
         except urllib2.HTTPError, e:
